@@ -1,0 +1,30 @@
+{
+  "name": "quadra-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnKaick/quadra-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnKaick/quadra-api/issues"
+  },
+  "homepage": "https://github.com/JohnKaick/quadra-api#readme",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "bookshelf": "^0.13.3",
+    "dotenv": "^6.0.0",
+    "hapi": "^17.5.2",
+    "hapi-auth-jwt2": "^8.1.0",
+    "knex": "^0.15.2",
+    "mysql": "^2.16.0",
+    "shortid": "^2.2.12"
+  }
+}
