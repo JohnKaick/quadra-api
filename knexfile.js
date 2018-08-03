@@ -1,12 +1,12 @@
 
 module.exports = {
   development: {
-    client: process.env.DB_DIALECT,
+    client: 'mysql',
     connection: {
-      host: process.DB_HOST,
-      database: process.env.DB_DATABASE,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD
+      host: 'localhost',
+      database: 'db_fut',
+      user: 'root',
+      password: 'john@1020'
     },
     migrations: {
       directory: './server/database/migrations'

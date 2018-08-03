@@ -1,7 +1,16 @@
-const start = require('./server')
+const server = require('./server')
 
-start().then(server => {
-    console.log('[SERVER] Started at: ', server.info.uri);
-}).catch(err => {
-    console.log('[SERVER] Error: ', err);
-})
+async function start() {
+
+    try {
+        await server.start();
+    }
+    catch (err) {
+        console.log(err);
+        process.exit(1);
+    }
+
+    console.log('Server running at:', server.info.uri);
+};
+
+start();
